@@ -3,7 +3,11 @@
     "rules": "database.rules.json"
   },
   "hosting": {
+<<<<<<< HEAD
     "public": "public",
+=======
+    "public": "build",
+>>>>>>> patternfly-upstream/master
     "rewrites": [
       {
         "source": "**",
