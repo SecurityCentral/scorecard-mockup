@@ -11,12 +11,12 @@ const rowActions = [
   { label: 'Action 2', fn: action2 }
 ];
 
-const PlatformBUPage = () => (
+const PlatformPage = () => (
   <Grid fluid className="container-pf-nav-pf-vertical">
     <Grid.Row>
       <Grid.Col xs={12}>
         <div className="page-header">
-          <h1>Platform BU</h1>
+          <h1>Platform</h1>
         </div>
       </Grid.Col>
       <Grid.Col xs={12}>
@@ -53,11 +53,9 @@ const PlatformBUPage = () => (
       )}
     </ListView>
     <div class="progress">
-      <div class="progressbar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-        <span>50%</span>
-      </div>
+      <ProgressBar bsStyle="danger" now={50} />
     </div>
   </Grid>
 );
 
-export default PlatformBUPage;
+export default PlatformPage;
