@@ -1,9 +1,9 @@
 import Ipsum from './pages/Ipsum';
 import Ipsum1A from './pages/Ipsum-1-A';
 import Ipsum1B from './pages/Ipsum-1-B';
-import Dolor from './pages/Dolor';
-import Amet from './pages/Amet';
-import Orbis from './pages/Orbis';
+import CloudPlatforms from './pages/cloud_platforms';
+import PlatformBU from './pages/platform_bu';
+import MiddlewareBU from './pages/middleware_bu';
 
 const baseName = '/';
 
@@ -30,21 +30,21 @@ const routes = () => [
   },
   {
     iconClass: 'fa fa-star',
-    title: 'Dolor',
-    to: '/dolor',
-    component: Dolor
+    title: 'Cloud Platforms',
+    to: '/CloudPlatforms',
+    component: CloudPlatforms
   },
   {
     iconClass: 'fa fa-bell',
-    title: 'Amet',
-    to: '/amet',
-    component: Amet
+    title: 'Platform BU',
+    to: '/platformbu',
+    component: PlatformBU
   },
   {
     iconClass: 'fa fa-shield',
-    title: 'Orbis',
-    to: '/orbis',
-    component: Orbis
+    title: 'Middleware BU',
+    to: '/middlewarebu',
+    component: MiddlewareBU
   }
 ];
 
