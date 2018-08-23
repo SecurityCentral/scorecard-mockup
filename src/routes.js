@@ -1,51 +1,38 @@
-import Ipsum from './pages/Ipsum';
-import Ipsum1A from './pages/Ipsum-1-A';
-import Ipsum1B from './pages/Ipsum-1-B';
-import CloudPlatforms from './pages/cloud_platforms';
-import PlatformBU from './pages/platform_bu';
-import MiddlewareBU from './pages/middleware_bu';
+import Scorecard from './pages/scorecard';
+import Cloud from './pages/cloud';
+import Platform from './pages/platform';
+import Middleware from './pages/middleware';
 
 const baseName = '/';
 
 const routes = () => [
   {
-    iconClass: 'fa fa-dashboard',
-    title: 'Ipsum',
+    iconClass: 'fa fa-shield',
+    title: 'Scorecard',
     to: '/',
-    component: Ipsum,
+    component: Scorecard,
     subItems: [
-      {
-        iconClass: 'fa fa-envelope-open',
-        title: 'Item 1-A',
-        to: '/ipsum/item-1-A',
-        component: Ipsum1A
-      },
-      {
-        iconClass: 'fa fa-envelope-closed',
-        title: 'Item 1-B',
-        to: '/ipsum/item-1-B',
-        component: Ipsum1B
-      }
+    {
+      iconClass: 'pf pficon-cloud-security',
+      title: 'Cloud',
+      to: '/pages/cloud',
+      component: Cloud
+    },
+    {
+      iconClass: 'pf pficon-container-node',
+      title: 'Platform',
+      to: '/pages/platform',
+      component: Platform
+    },
+    {
+      iconClass: 'pf pficon-maintenance',
+      title: 'Middleware',
+      to: '/pages/middleware',
+      component: Middleware
+    }
+
     ]
   },
-  {
-    iconClass: 'fa fa-star',
-    title: 'Cloud Platforms',
-    to: '/CloudPlatforms',
-    component: CloudPlatforms
-  },
-  {
-    iconClass: 'fa fa-bell',
-    title: 'Platform BU',
-    to: '/platformbu',
-    component: PlatformBU
-  },
-  {
-    iconClass: 'fa fa-shield',
-    title: 'Middleware BU',
-    to: '/middlewarebu',
-    component: MiddlewareBU
-  }
 ];
 
 export { baseName, routes };

@@ -2,10 +2,10 @@ import * as React from 'react';
 import { Grid } from 'patternfly-react';
 import { EmptyStateComponent } from '../components/EmptyStateComponent';
 
-const MiddlewareBUPage = () => (
+const CloudPage = () => (
   <Grid fluid className="container-pf-nav-pf-vertical">
-    <EmptyStateComponent title="Middleware BU" />
+    <EmptyStateComponent title="Cloud" />
   </Grid>
 );
 
-export default MiddlewareBUPage;
+export default CloudPage;
